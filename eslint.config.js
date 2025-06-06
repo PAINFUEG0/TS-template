@@ -10,9 +10,8 @@ export default defineConfig([
   jslint.configs.recommended,
   ...tslint.configs.recommended,
   { linterOptions: { noInlineConfig: true } },
+  { languageOptions: { globals: globals.node } },
   {
-    files: ["src/**/*.{ts,mts,cts}"],
-    languageOptions: { globals: globals.node },
     plugins: { custom: { rules: { _: sortImportsByLength } } },
     rules: { "custom/_": "warn", "@typescript-eslint/consistent-type-imports": "warn" }
   }
