@@ -9,6 +9,5 @@
   "bracketSpacing": true,
   "arrowParens": "always",
   "trailingComma": "none",
-  "quoteProps": "as-needed",
-  "$schema": "https://json.schemastore.org/prettierrc.json"
+  "quoteProps": "as-needed"
 }
